@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planification</title>
+</head>
+
+<body>
+    <h1>Welcome to the 24x7 Compostela Fitness Club : Courts Reservation Page!!</h1>
+    <img src="./img/planification.png" alt="foto" height="200px">
+    <form action="data.php" method="post">
+        <fieldset>
+            <legend>Menber Demographics</legend>
+            <Label for="name">Name</Label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="member">Are you a Member?</label>
+            <input type="radio" name="member" id="member" value="Member">Member
+            <input type="radio" name="member" id="member" value="Non-member">Non-member
+            <br><br>
+            <Label for="Email">Email</Label>
+            <input type="text" name="email" id="email">
+            <br><br>
+        </fieldset>
+        <Label for="facility">Facility</Label>
+        <select name="facility" id="facility">
+            <option value="indoor football">Indoor football</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Squash">Squash</option>
+            <option value="Racquetball">Racquetball</option>
+            <option value="Basquetball">Basquetball</option>
+        </select>
+        <br><br>
+        <label for="date">Select a reservation date and time:</label>
+        <br><br>
+        <input type="date" name="date" id="date">
+        <input type="time" name="heure" id="heure">
+        <br><br>
+        <input type="checkbox" name="agree to club reservation policy" id="agree to club reservation policy"
+            value="Yes">
+        <label for="agree to club reservation policy">I agree to the club's reservation policy</label>
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
